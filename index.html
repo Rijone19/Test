@@ -3,7 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wedding invitation</title>
+    <title>Wedding Invitation</title>
+
+    <meta property="og:title" content="Undangan Spesial Untukmu" />
+
+    <meta property="og:description" content="Klik untuk melihat kejutan di dalamnya!" />
+
+    <meta property="og:image" content="https://test-zlo.pages.dev/wedding.jpeg" />
+
+    <meta property="og:url" content="https://test-zlo.pages.dev" />
+
+    <meta property="og:type" content="website" />
+    
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,23 +23,21 @@
             align-items: center;
             min-height: 100vh;
             margin: 0;
-            background-color: #000000; /* UBAH BG JADI HITAM */
+            background-color: #000000;
             position: relative;
         }
 
         .container {
             position: relative;
             text-align: center;
-            /* Tambahkan property untuk mengatur ukuran container jika perlu,
-               tapi biasanya gambar yang diatur ukurannya */
         }
 
         .monkey-image {
-            width: 600px; /* Lebar gambar 4x lebih besar dari aslinya */
-            height: auto; /* Tinggi otomatis menyesuaikan lebar */
+            width: 900px;
+            height: auto;
             border-radius: 15px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Bayangan sedikit lebih besar */
-            object-fit: contain; /* Memastikan gambar tidak terpotong */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+            object-fit: contain;
         }
 
         .overlay-text {
@@ -39,33 +48,27 @@
             color: white;
             font-size: 3em;
             font-weight: bold;
-            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9); /* Bayangan teks lebih kuat */
-            background-color: rgba(0, 0, 0, 0.6); /* Background semi-transparan untuk teks */
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9);
+            background-color: rgba(0, 0, 0, 0.6);
             padding: 15px 25px;
             border-radius: 10px;
         }
 
-        /* Responsive adjustments for the image */
-        @media (max-width: 1400px) { /* Untuk layar yang lebih kecil dari 1400px */
-            .monkey-image {
-                width: 600px; /* Kurangi sedikit agar tidak terlalu besar di laptop */
-            }
-        }
-        @media (max-width: 1024px) { /* Untuk tablet */
+        @media (max-width: 1024px) {
             .monkey-image {
                 width: 800px;
             }
         }
-        @media (max-width: 768px) { /* Untuk ponsel/tablet kecil */
+        @media (max-width: 768px) {
             .monkey-image {
-                width: 90vw; /* Lebar 90% dari viewport width */
+                width: 90vw;
             }
             .overlay-text {
                 font-size: 2em;
                 padding: 10px 15px;
             }
         }
-        @media (max-width: 480px) { /* Untuk ponsel */
+        @media (max-width: 480px) {
             .overlay-text {
                 font-size: 1.5em;
                 padding: 8px 12px;
